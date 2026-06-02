@@ -1,0 +1,451 @@
+<!--
+  ╔══════════════════════════════════════════════════════╗
+  ║   VERSIÓN PARA AGENTES INMOBILIARIOS — Casa Niebla 20 ║
+  ╠══════════════════════════════════════════════════════╣
+  ║  CÓMO GENERAR EL PDF PARA COMPARTIR POR WHATSAPP:   ║
+  ║                                                      ║
+  ║  1. Edita "Nombre del Agente" y "Teléfono · Correo" ║
+  ║     en la tarjeta al final de este archivo (busca   ║
+  ║     "EDITAR-AGENTE" con Ctrl+F)                     ║
+  ║  2. Guarda el archivo                               ║
+  ║  3. Abre este archivo en Google Chrome              ║
+  ║  4. Presiona Ctrl+P (Imprimir)                      ║
+  ║  5. Destino: "Guardar como PDF"                     ║
+  ║  6. Activa "Gráficos en segundo plano"              ║
+  ║  7. Guardar → compartir por WhatsApp                ║
+  ╚══════════════════════════════════════════════════════╝
+-->
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<meta name="theme-color" content="#1A1714">
+<meta name="robots" content="noindex,nofollow">
+
+<title>Casa Niebla 20 — Ficha Técnica</title>
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="img/ISOblack.png">
+
+<!-- Fuentes: carga no bloqueante -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
+
+<!-- Estilos -->
+<link rel="stylesheet" href="css/styles.css">
+<style>
+@media print{
+  @page{size:390px auto;margin:0}
+  body{width:390px;padding-bottom:0;padding-top:0}
+  *{page-break-inside:avoid!important;break-inside:avoid!important}
+  img{max-width:100%!important;display:block!important}
+  .reveal{opacity:1!important;transform:none!important;visibility:visible!important}
+  .price-section{background:#1A1714!important;-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+  .price-section *{-webkit-print-color-adjust:exact!important;print-color-adjust:exact!important}
+}
+</style>
+</head>
+<body>
+
+<!-- LIGHTBOX — no editar -->
+<div id="lightbox" class="lb-overlay" role="dialog" aria-modal="true" aria-label="Imagen ampliada" aria-hidden="true">
+  <button class="lb-prev" id="lb-prev" aria-label="Imagen anterior">
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <div class="lb-img-wrap">
+    <button class="lb-close" id="lb-close" aria-label="Cerrar imagen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <img id="lb-img" src="" alt="" loading="lazy">
+    <p id="lb-caption" aria-live="polite"></p>
+  </div>
+  <button class="lb-next" id="lb-next" aria-label="Imagen siguiente">
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+</div>
+
+<header class="hero" role="banner">
+  <figure class="hero__media">
+    <img src="img/ISOrojo.png" alt="" class="hero__iso" aria-hidden="true">
+    <img src="img/fachada.jpg" alt="Fachada principal Casa Niebla 20"
+         class="hero__img" width="1200" height="1200"
+         loading="eager" fetchpriority="high"
+         data-lightbox data-lb-src="img/fachada.jpg"
+         data-lb-caption="Fachada principal — Casa Niebla 20"
+         data-lb-type="planta">
+    <figcaption>Casa Niebla 20 · Altozano · Querétaro · Vista de fachada principal</figcaption>
+  </figure>
+
+  <div class="hero__body">
+    <p class="hero__eyebrow">Preventa · Altozano · Querétaro · 2026</p>
+    <h1 class="hero__title">Niebla 20</h1>
+    <p class="hero__subtitle">No vendemos lujo. Vendemos la casa que quieres construir.</p>
+
+    <dl class="hero__meta">
+      <div><dt>Construcción</dt><dd>268 m²</dd></div>
+      <div><dt>Terreno</dt><dd>180 m²</dd></div>
+      <div><dt>Niveles</dt><dd>2 + azotea</dd></div>
+      <div><dt>Recámaras</dt><dd>3 con opción a 4</dd></div>
+      <div><dt>Baños</dt><dd>4 completos</dd></div>
+      <div><dt>Cochera</dt><dd>3 lugares techados</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main id="main-content">
+
+<section class="section" aria-labelledby="h-concepto">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-concepto">El concepto</h2>
+    <p class="concept__text reveal">
+      Entendemos que una casa comprada rara vez se adapta completamente al cliente. Una casa se debe ajustar al usuario,
+      no al revés. Niebla 20 no es un producto de catálogo: es una residencia
+      que busca brindar <em>calidad espacial, materiales de gran calidad</em>
+      y la posibilidad de ajustarse <em>a tu forma de vivir</em> antes de que termine la obra.
+      En una zona con una amplia oferta inmobiliaria, la diferencia no está en el precio —
+      está en el valor que obtienes por él. Esta casa no busca llamar la atención, en ella encuentras calidad en los espacios, los acabados y la construcción.
+      Su propósito es darte flexibilidad espacial, casi como <em>construir tu propia casa.</em>
+    </p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="h-renders">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-renders">Imágenes del proyecto</h2>
+    <div class="renders__stack">
+
+      <figure class="render-box render-box--tall reveal">
+        <img src="img/pano.jpeg" alt="Panorámica área social — sala, comedor y cocina"
+             class="render-box__img" width="1850" height="450" loading="lazy"
+             data-lightbox data-lb-src="img/pano.jpeg"
+             data-lb-caption="Sala · comedor · cocina integrados"
+             data-lb-type="pano" data-lb-group="renders">
+        <figcaption>Sala · comedor · cocina integrados</figcaption>
+      </figure>
+
+      <div class="renders__pair">
+        <figure class="render-box render-box--short reveal">
+          <img src="img/escalera.jpg" alt="Escalera y hall de acceso a planta alta"
+               class="render-box__img" width="400" height="300" loading="lazy"
+               data-lightbox data-lb-src="img/escalera.jpg"
+               data-lb-caption="Escalera y hall" data-lb-group="renders">
+          <figcaption>Escalera y hall</figcaption>
+        </figure>
+
+        <figure class="render-box render-box--short reveal">
+          <img src="img/jardinera.jpg" alt="Vestíbulo con jardinera interior"
+               class="render-box__img" width="400" height="300" loading="lazy"
+               data-lightbox data-lb-src="img/jardinera.jpg"
+               data-lb-caption="Vestíbulo y jardinera" data-lb-group="renders">
+          <figcaption>Vestíbulo y jardinera</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="h-plantas">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-plantas">Plantas ambientadas</h2>
+    <div class="plantas__grid">
+
+      <article class="planta-card reveal">
+        <div class="planta-card__img">
+          <img src="img/plantabaja.png" alt="Opción cocina abierta o cerrada"
+               width="400" height="225" loading="lazy"
+               data-lightbox data-lb-src="img/plantabaja.png"
+               data-lb-caption="Planta baja — opciones de distribución"
+               data-lb-type="planta" data-lb-group="plantas">
+        </div>
+        <div class="planta-card__body">
+          <h3 class="planta-card__title">Planta baja</h3>
+          <p class="planta-card__desc">Área de servicio · sala · comedor · cocina · baño completo · jardín</p>
+        </div>
+      </article>
+
+      <article class="planta-card reveal">
+        <div class="planta-card__img">
+          <img src="img/plantaalta.png" alt="Distribución planta alta"
+               width="400" height="225" loading="lazy"
+               data-lightbox data-lb-src="img/plantaalta.png"
+               data-lb-caption="Planta alta — recámaras y baños"
+               data-lb-type="planta" data-lb-group="plantas">
+        </div>
+        <div class="planta-card__body">
+          <h3 class="planta-card__title">Planta alta</h3>
+          <p class="planta-card__desc">Cuarto TV · 3 recámaras · 3 baños completos · 2 clósets · vestidor principal</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="h-custom">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-custom">Tu casa, a tu medida</h2>
+    <p class="custom__intro reveal">
+      La planta baja puede adaptarse antes o después de entregar la casa.
+      Contáctanos durante la preventa y define cómo quieres vivir:
+      no hay costo adicional por elegir, únicamente en preventa.
+    </p>
+    <div class="flex-grid">
+
+      <article class="flex-card reveal">
+        <div class="flex-card__thumb">
+          <img src="img/family.png" alt="Opción cuarto en planta baja"
+               width="400" height="225" loading="lazy"
+               data-lightbox data-lb-src="img/family.png"
+               data-lb-caption="Opción: Cuarto en planta baja"
+               data-lb-type="planta" data-lb-group="custom">
+        </div>
+        <div class="flex-card__body">
+          <div class="flex-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Cuarto en planta baja</h3>
+          <p>Ideal para adultos mayores, trabajar en casa o ganar otro espacio de convivencia para la familia.</p>
+        </div>
+      </article>
+
+      <article class="flex-card reveal">
+        <div class="flex-card__thumb">
+          <img src="img/cocina.png" alt="Opción cocina abierta o cerrada"
+               width="400" height="225" loading="lazy"
+               data-lightbox data-lb-src="img/cocina.png"
+               data-lb-caption="Opción: Cocina abierta o cerrada"
+               data-lb-type="planta" data-lb-group="custom">
+        </div>
+        <div class="flex-card__body">
+          <div class="flex-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+          </div>
+          <h3>Cocina cerrada</h3>
+          <p>Ideal para quienes prefieren mantener los espacios separados.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="h-acabados">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-acabados">Memoria de acabados y equipamiento</h2>
+    <dl>
+      <div class="acabados__item reveal"><dt class="ac__label">Cancelería</dt><dd class="ac__desc">Aluminio color gris Europa <span class="brand-pill">CUPRUM / Eurovent</span></dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Pisos sociales</dt><dd class="ac__desc">Travertino a la veta 30 cm × largos libres, acabado mate <span class="brand-pill">Piedra natural</span></dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Pisos rec.</dt><dd class="ac__desc">Laminado 8 mm AC4 o madera de ingeniería (a elegir en preventa) <span class="brand-pill">Teknostep</span></dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Cocina</dt><dd class="ac__desc">Gabinetes de melamina con frentes de <b>MDF enchapado</b>, cubierta de granito (a elegir en preventa), tarja doble de acero inox.</dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Baños</dt><dd class="ac__desc">WC descarga dual, lavabos monolíticos, monomandos de palanca <span class="brand-pill">Interceramic / Helvex / Urrea</span></dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Herrería</dt><dd class="ac__desc">Puertas y cubiertas en acabado mate</dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Pintura</dt><dd class="ac__desc">Vinílica lavable interior / acrílica exterior, acabado mate <span class="brand-pill">Behr / Berel</span></dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Clósets</dt><dd class="ac__desc">Gabinetes de melamina con frentes de <b>MDF enchapado</b>, correderas amortiguadas, espejo integrado</dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Eléctrico</dt><dd class="ac__desc">Apagadores y contactos (color y línea a elegir en preventa), tablero de interruptores term. <span class="brand-pill">Bticino / SquareD</span></dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Agua caliente</dt><dd class="ac__desc">Calentador de paso a gas, preparación para solar <span class="brand-pill">Calorex</span></dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Aire Acondicionado</dt><dd class="ac__desc">Preparación para minisplit en cada recámara de Planta Alta</dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Cisterna</dt><dd class="ac__desc">Tuberías en Tuboplus, cisterna 5 mil litros, bomba sumergible .75 hp <span class="brand-pill">Rotoplas / Pedrollo</span></dd></div>
+    </dl>
+    <p class="acabados__note reveal">* Marcas indicadas como referencia de calidad. El constructor podrá sustituir por equivalentes de igual o mayor especificación, previo acuerdo con el comprador.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="h-detalles">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-detalles">Detalles interiores</h2>
+    <div class="sec-renders__grid">
+
+      <figure class="sec-box reveal">
+        <img src="img/escalera.jpg" alt="Vestíbulo principal"
+             width="600" height="600" loading="lazy"
+             data-lightbox data-lb-src="img/escalera.jpg" data-lb-caption="Remate acceso" data-lb-group="detalles">
+        <figcaption>Remate acceso</figcaption>
+      </figure>
+
+      <figure class="sec-box reveal">
+        <img src="img/cocinacerrada.jpg" alt="Cocina y área social"
+             width="600" height="600" loading="lazy"
+             data-lightbox data-lb-src="img/cocinacerrada.jpg" data-lb-caption="Cocina Cerrada" data-lb-group="detalles">
+        <figcaption>OPC. Cocina Cerrada</figcaption>
+      </figure>
+
+      <figure class="sec-box reveal">
+        <img src="img/familypano.jpg" alt="Family Panorámica"
+             width="600" height="600" loading="lazy"
+             data-lightbox data-lb-src="img/familypano.jpg" data-lb-caption="OPC. Family" data-lb-group="detalles">
+        <figcaption>OPC. Family</figcaption>
+      </figure>
+
+      <figure class="sec-box reveal">
+        <img src="img/jardinera.jpg" alt="Jardinera interior"
+             width="600" height="600" loading="lazy"
+             data-lightbox data-lb-src="img/jardinera.jpg" data-lb-caption="Vestíbulo Planta Alta" data-lb-group="detalles">
+        <figcaption>Vest Planta Alta</figcaption>
+      </figure>
+
+      <figure class="sec-box reveal">
+        <img src="img/principal.jpg" alt="Recámara principal"
+             width="600" height="600" loading="lazy"
+             data-lightbox data-lb-src="img/principal.jpg" data-lb-caption="Recámara principal" data-lb-group="detalles">
+        <figcaption>Recámara Principal</figcaption>
+      </figure>
+
+      <figure class="sec-box reveal">
+        <img src="img/tv.jpg" alt="Sala de TV planta alta"
+             width="600" height="600" loading="lazy"
+             data-lightbox data-lb-src="img/tv.jpg" data-lb-caption="Sala TV" data-lb-group="detalles">
+        <figcaption>Sala TV</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<section class="obra-section" aria-labelledby="h-obra">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-obra">Avance de obra</h2>
+    <p class="obra__intro reveal">
+      Actualizamos esta sección mensualmente con fotografías reales del proceso constructivo
+      para que puedas seguir el avance de tu inversión con total transparencia.
+    </p>
+
+    <div class="obra-card reveal">
+      <div class="obra__gallery">
+
+        <div class="obra__gallery-item"
+             data-lightbox data-lb-src="img/obraCelosia.jpg"
+             data-lb-caption="Avance de obra — Mayo 2026" data-lb-group="obra">
+          <img src="img/obraCelosia.jpg" alt="Avance de obra — Mayo 2026"
+               width="800" height="450" loading="lazy">
+          <span class="obra-card__badge">Mayo 2026</span>
+        </div>
+
+        <div class="obra__gallery-item"
+             data-lightbox data-lb-src="img/obraMuros.jpg"
+             data-lb-caption="Muros — Mayo 2026" data-lb-group="obra">
+          <img src="img/obraMuros.jpg" alt="Muros — Mayo 2026"
+               width="400" height="300" loading="lazy">
+        </div>
+
+        <div class="obra__gallery-item"
+             data-lightbox data-lb-src="img/obraCimbra.jpg"
+             data-lb-caption="Cimbra — Mayo 2026" data-lb-group="obra">
+          <img src="img/obraCimbra.jpg" alt="Cimbra — Mayo 2026"
+               width="400" height="300" loading="lazy">
+        </div>
+
+      </div>
+
+      <div class="obra-card__body">
+        <p class="obra-card__label">Última actualización · mayo 2026</p>
+        <p class="obra-card__desc">
+          Estructura de planta baja concluída al 100%. Inicio de trabajos de cimbrado para recibir armados de losa de entrepiso y posteriormente el colado. El proyecto avanza conforme al calendario establecido en proyecto.
+        </p>
+
+        <div class="obra__progress">
+          <div class="obra__progress-header">
+            <span class="obra__progress-label">Avance general de obra</span>
+            <span class="obra__progress-pct">35%</span>
+          </div>
+          <div class="obra__bar-track" role="progressbar"
+               aria-valuenow="35"
+               aria-valuemin="0" aria-valuemax="100" aria-label="Avance de obra: 35%">
+            <div class="obra__bar-fill" data-target-width="35%"></div>
+          </div>
+        </div>
+
+        <div class="obra__trust" role="note">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <p>
+            <strong>Transparencia total para el comprador en preventa.</strong>
+            Las fotografías son tomadas directamente en obra y publicadas sin edición.
+            Podrás pedir la actualización semanal del avance si se requiere.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     PRECIO — EDITAR antes de compartir con el cliente
+══════════════════════════════════════════ -->
+<section class="price-section" aria-labelledby="h-precio-agente">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-precio-agente">Precio de preventa</h2>
+
+    <div class="price__row reveal">
+      <div>
+        <p class="price__label">Precio de lanzamiento</p>
+        <p class="price__main" aria-label="Precio de preventa">
+          <span class="price__curr" aria-hidden="true"></span>$7,995,000<!-- EDITAR precio -->
+        </p>
+        <p class="price__note">MXN · precio de preventa válido hasta octubre de 2026</p>
+      </div>
+      <div class="price__termination" aria-label="Precio estimado en terminación">
+        <span class="price__termination-label">Precio en terminación</span>
+        <span class="price__termination-value">$8,215,000 </span><!-- EDITAR precio terminación -->
+        <span class="price__termination-note">MXN  · precio de venta 2026</span>
+      </div>
+    </div>
+
+    <hr class="divider">
+
+    <ul class="price__includes reveal" aria-label="Beneficios incluidos en preventa">
+      <li>Personalización de planta antes de terminaciones</li>
+      <li>Elección de acabados desde catálogo de materiales</li>
+      <li>Escrituración al momento de liquidar</li>
+      <li>Garantía de estructura 10 años</li>
+      <li>Entrega Diciembre 2026</li>
+      <li>Financiamiento personalizado — contáctanos para más información</li>
+    </ul>
+
+    <p class="price__scarcity reveal" role="note">
+      Precio de lanzamiento vigente hasta agotar la etapa de preventa — unidad única
+    </p>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+     TARJETA DEL AGENTE
+     EDITAR-AGENTE: escribe tu nombre y datos antes de generar el PDF
+══════════════════════════════════════════ -->
+<footer class="agent-footer">
+  <img src="img/Taludlogo.png" alt="Talud" class="agent-footer__logo">
+  <div class="agent-footer__divider" aria-hidden="true"></div>
+  <div class="agent-footer__info">
+    <p class="agent-footer__label">Presentado por</p>
+    <p class="agent-footer__name">[Nombre del Agente]</p><!-- EDITAR-AGENTE -->
+    <p class="agent-footer__contact">[Teléfono · Correo]</p><!-- EDITAR-AGENTE -->
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+<script>
+(function(){
+  function applyPrintSize(){
+    var h=document.documentElement.scrollHeight;
+    var existing=document.getElementById('print-size-style');
+    if(existing)existing.remove();
+    var s=document.createElement('style');
+    s.id='print-size-style';
+    s.textContent='@media print{@page{size:390px '+h+'px;margin:0}}';
+    document.head.appendChild(s);
+  }
+  window.addEventListener('beforeprint',function(){
+    applyPrintSize();
+  });
+  window.addEventListener('load',function(){
+    applyPrintSize();
+  });
+}());
+</script>
+
+</body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<meta name="theme-color" content="#1A1714">
+<meta name="color-scheme" content="light">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta name="format-detection" content="telephone=no">
+
+<!-- EDITAR: título, descripción y URL de tu dominio -->
+<title>Casa Niebla 20 — Preventa Querétaro 2026</title>
+<meta name="description" content="Preventa residencial en Querétaro. Calidad espacial, materiales de primera selección y personalización total a tu medida.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://casa-niebla-20.talud.mx/">
+
+<!-- Open Graph — aparece al compartir por WhatsApp, iMessage, redes sociales -->
+<!-- EDITAR: og:url y og:image con tu URL real -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://casa-niebla-20.talud.mx/">
+<meta property="og:title" content="Casa Niebla 20 — Preventa Querétaro 2026">
+<meta property="og:description" content="Calidad espacial, materiales de primera selección y personalización total.">
+<meta property="og:image" content="https://casa-niebla-20.talud.mx/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_MX">
+
+<!-- Favicon — ISOblack.png en carpeta img/ -->
+<link rel="icon" type="image/png" href="img/ISOblack.png">
+
+<!-- Fuentes: carga no bloqueante -->
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"></noscript>
+
+<!-- Estilos -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- Datos estructurados para Google — EDITAR valores entre comillas -->
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"RealEstateListing","name":"Casa Niebla 20","description":"Preventa residencial en Querétaro. Calidad espacial y personalización total.","url":"https://casa-niebla-20.talud.mx/","image":"https://casa-niebla-20.talud.mx/img/og-image.jpg","address":{"@type":"PostalAddress","addressLocality":"Querétaro","addressRegion":"Querétaro","addressCountry":"MX"},"floorSize":{"@type":"QuantitativeValue","value":"268","unitCode":"MTK"},"numberOfRooms":3,"offers":{"@type":"Offer","priceCurrency":"MXN","availability":"https://schema.org/LimitedAvailability","validThrough":"2026-12-31"},"seller":{"@type":"Organization","name":"[Nombre del Despacho]","telephone":"+524422361139","email":"[Correo]"}}
+</script>
+</head>
+<body>
+
+<!-- LIGHTBOX — no editar -->
+<div id="lightbox" class="lb-overlay" role="dialog" aria-modal="true" aria-label="Imagen ampliada" aria-hidden="true">
+  <button class="lb-prev" id="lb-prev" aria-label="Imagen anterior">
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+  </button>
+  <div class="lb-img-wrap">
+    <button class="lb-close" id="lb-close" aria-label="Cerrar imagen">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <img id="lb-img" src="" alt="" loading="lazy">
+    <p id="lb-caption" aria-live="polite"></p>
+  </div>
+  <button class="lb-next" id="lb-next" aria-label="Imagen siguiente">
+    <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+  </button>
+</div>
+
+<!-- ═══════════════════════════════════════════
+     HERO
+     EDITAR: título, subtítulo y los 6 datos del dl
+═══════════════════════════════════════════ -->
+<header class="hero" role="banner">
+  <figure class="hero__media">
+    <img src="img/ISOrojo.png" alt="" class="hero__iso" aria-hidden="true">
+    <img src="img/fachada.jpg" alt="Fachada principal Casa Niebla 20"
+         class="hero__img" width="1200" height="800"
+         loading="eager" fetchpriority="high"
+         data-lightbox data-lb-src="img/fachada.jpg"
+         data-lb-caption="Fachada principal — Casa Niebla 20"
+         >
+    <figcaption>Casa Niebla 20 · Altozano · Querétaro · Vista de fachada principal</figcaption>
+  </figure>
+
+  <div class="hero__body">
+    <p class="hero__eyebrow">Preventa · Altozano  · Querétaro · 2026</p><!-- EDITAR año/ciudad -->
+    <h1 class="hero__title">Niebla 20</h1><!-- EDITAR nombre -->
+    <p class="hero__subtitle">No vendemos lujo. Vendemos la casa que quieres construir.</p><!-- EDITAR subtítulo -->
+
+    <!-- EDITAR los 6 valores del proyecto -->
+    <dl class="hero__meta">
+      <div><dt>Construcción</dt><dd>268 m²</dd></div>
+      <div><dt>Terreno</dt><dd>180 m²</dd></div>
+      <div><dt>Niveles</dt><dd>2 + azotea</dd></div>
+      <div><dt>Recámaras</dt><dd>3 con opción a 4</dd></div>
+      <div><dt>Baños</dt><dd>4 completos</dd></div>
+      <div><dt>Cochera</dt><dd>3 lugares techados</dd></div>
+    </dl>
+  </div>
+</header>
+
+<main id="main-content">
+
+<!-- ═══════════════════════════════════════════
+     01 · CONCEPTO — EDITAR el párrafo
+═══════════════════════════════════════════ -->
+<section class="section" aria-labelledby="h-concepto">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-concepto">El concepto</h2>
+    <p class="concept__text reveal">
+      Entendemos que una casa comprada rara vez se adapta completamente al cliente. Una casa se debe ajustar al usuario,
+      no al revés. Niebla 20 no es un producto de catálogo: es una residencia
+      que busca brindar <em>calidad espacial, materiales de gran calidad</em>
+      y la posibilidad de ajustarse <em>a tu forma de vivir</em> antes de que termine la obra.
+      En una zona con una amplia oferta inmobiliaria, la diferencia no está en el precio —
+      está en el valor que obtienes por él. Esta casa no busca llamar la atención, en ella encuentras calidad en los espacios, los acabados y la construcción.
+      Su propósito es darte flexibilidad espacial, casi como <em>construir tu propia casa.</em>
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     02 · RENDERS PRINCIPALES
+     Tamaños: Render 01 → 800×450 px | Renders 02-03 → 400×300 px
+═══════════════════════════════════════════ -->
+<section class="section" aria-labelledby="h-renders">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-renders">Imágenes del proyecto</h2>
+    <div class="renders__stack">
+
+      <figure class="render-box render-box--tall reveal">
+        <img src="img/pano.jpeg" alt="Panorámica área social — sala, comedor y cocina"
+             class="render-box__img" width="1850" height="450" loading="lazy"
+             data-lightbox data-lb-src="img/pano.jpeg"
+             data-lb-caption="Sala · comedor · cocina integrados"
+             data-lb-type="pano" data-lb-group="renders">
+        <figcaption>Sala · comedor · cocina integrados</figcaption>
+      </figure>
+
+      <div class="renders__pair">
+        <figure class="render-box render-box--short reveal">
+          <img src="img/escalera.jpg" alt="Escalera y hall de acceso a planta alta"
+               class="render-box__img" width="400" height="300" loading="lazy"
+               data-lightbox data-lb-src="img/escalera.jpg"
+               data-lb-caption="Escalera y hall" data-lb-group="renders">
+          <figcaption>Escalera y hall</figcaption>
+        </figure>
+
+        <figure class="render-box render-box--short reveal">
+          <img src="img/jardinera.jpg" alt="Vestíbulo con jardinera interior"
+               class="render-box__img" width="400" height="300" loading="lazy"
+               data-lightbox data-lb-src="img/jardinera.jpg"
+               data-lb-caption="Vestíbulo y jardinera" data-lb-group="renders">
+          <figcaption>Vestíbulo y jardinera</figcaption>
+        </figure>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     03 · PLANTAS AMBIENTADAS
+     Tamaño recomendado: 600×600 px
+     Para habilitar el lightbox, verifica que data-lb-src apunte al mismo archivo
+═══════════════════════════════════════════ -->
+<section class="section" aria-labelledby="h-plantas">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-plantas">Plantas ambientadas</h2>
+    <div class="plantas__grid">
+
+      <article class="planta-card reveal">
+        <div class="planta-card__img">
+          <img src="img/plantabaja.png" alt="Opción cocina abierta o cerrada"
+               width="400" height="225" loading="lazy"
+               data-lightbox data-lb-src="img/plantabaja.png"
+               data-lb-caption="Planta baja — opciones de distribución"
+               data-lb-type="planta" data-lb-group="plantas">
+        </div>
+        <div class="planta-card__body">
+          <h3 class="planta-card__title">Planta baja</h3><!-- EDITAR -->
+          <p class="planta-card__desc">Área de servicio · sala · comedor · cocina · baño completo · jardín</p><!-- EDITAR -->
+        </div>
+      </article>
+
+      <article class="planta-card reveal">
+        <div class="planta-card__img">
+          <img src="img/plantaalta.png" alt="Distribución planta alta"
+               width="400" height="225" loading="lazy"
+               data-lightbox data-lb-src="img/plantaalta.png"
+               data-lb-caption="Planta alta — recámaras y baños"
+               data-lb-type="planta" data-lb-group="plantas">
+        </div>
+        <div class="planta-card__body">
+          <h3 class="planta-card__title">Planta alta</h3><!-- EDITAR -->
+          <p class="planta-card__desc">Cuarto TV · 3 recámaras · 3 baños completos · 2 clósets · vestidor principal</p><!-- EDITAR -->
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     04 · PERSONALIZACIÓN — EDITAR títulos y descripciones
+═══════════════════════════════════════════ -->
+<section class="section" aria-labelledby="h-custom">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-custom">Tu casa, a tu medida</h2>
+    <p class="custom__intro reveal">
+      La planta baja puede adaptarse antes o después de entregar la casa.
+      Contáctanos durante la preventa y define cómo quieres vivir:
+      no hay costo adicional por elegir, únicamente en preventa.
+    </p>
+    <div class="flex-grid">
+
+      <article class="flex-card reveal">
+        <div class="flex-card__thumb">
+          <img src="img/family.png" alt="Opción cuarto en planta baja"
+               width="400" height="225" loading="lazy"
+               data-lightbox data-lb-src="img/family.png"
+               data-lb-caption="Opción: Cuarto en planta baja"
+               data-lb-type="planta" data-lb-group="custom">
+        </div>
+        <div class="flex-card__body">
+          <div class="flex-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3>Cuarto en planta baja</h3>
+          <p>Ideal para adultos mayores, trabajar en casa o ganar otro espacio de convivencia para la familia.</p>
+        </div>
+      </article>
+
+      <article class="flex-card reveal">
+        <div class="flex-card__thumb">
+          <img src="img/cocina.png" alt="Opción cocina abierta o cerrada"
+               width="400" height="225" loading="lazy"
+               data-lightbox data-lb-src="img/cocina.png"
+               data-lb-caption="Opción: Cocina abierta o cerrada"
+               data-lb-type="planta" data-lb-group="custom">
+        </div>
+        <div class="flex-card__body">
+          <div class="flex-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+          </div>
+          <h3>Cocina cerrada</h3>
+          <p>Ideal para quienes prefieren mantener los espacios separados.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     05 · ACABADOS — EDITAR especificaciones y marcas
+═══════════════════════════════════════════ -->
+<section class="section" aria-labelledby="h-acabados">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-acabados">Memoria de acabados y equipamiento</h2>
+    <dl>
+      <div class="acabados__item reveal"><dt class="ac__label">Cancelería</dt><dd class="ac__desc">Aluminio color gris Europa <span class="brand-pill">CUPRUM / Eurovent</span></dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Pisos sociales</dt><dd class="ac__desc">Travertino a la veta 30 cm × largos libres, acabado mate <span class="brand-pill">Piedra natural</span></dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Pisos rec.</dt><dd class="ac__desc">Laminado 8 mm AC4 o madera de ingeniería (a elegir en preventa) <span class="brand-pill">Teknostep</span></dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Cocina</dt><dd class="ac__desc">Gabinetes de melamina con frentes de <b>MDF enchapado</b>, cubierta de granito (a elegir en preventa), tarja doble de acero inox.</dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Baños</dt><dd class="ac__desc">WC descarga dual, lavabos monolíticos, monomandos de palanca <span class="brand-pill">Interceramic / Helvex / Urrea</span></dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Herrería</dt><dd class="ac__desc">Puertas y cubiertas en acabado mate</dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Pintura</dt><dd class="ac__desc">Vinílica lavable interior / acrílica exterior, acabado mate <span class="brand-pill">Behr / Berel</span></dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Clósets</dt><dd class="ac__desc">Gabinetes de melamina con frentes de <b>MDF enchapado</b>, correderas amortiguadas, espejo integrado</dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Eléctrico</dt><dd class="ac__desc">Apagadores y contactos (color y línea a elegir en preventa), tablero de interruptores term. <span class="brand-pill">Bticino / SquareD</span></dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Agua caliente</dt><dd class="ac__desc">Calentador de paso a gas, preparación para solar <span class="brand-pill">Calorex</span></dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Aire Acondicionado</dt><dd class="ac__desc">Preparación para minisplit en cada recámara de Planta Alta </dd></div>
+      <div class="acabados__item reveal"><dt class="ac__label">Cisterna</dt><dd class="ac__desc">Tuberías en Tuboplus, cisterna 5 mil litros, bomba sumergible .75 hp <span class="brand-pill">Rotoplas / Pedrollo</span></dd></div>
+    </dl>
+    <p class="acabados__note reveal">* Marcas indicadas como referencia de calidad. El constructor podrá sustituir por equivalentes de igual o mayor especificación, previo acuerdo con el comprador.</p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     06 · DETALLES INTERIORES
+     Tamaño recomendado: 600×600 px
+     Para agregar más fotos: duplica un <figure class="sec-box"> y ajusta src, alt y figcaption
+═══════════════════════════════════════════ -->
+<section class="section" aria-labelledby="h-detalles">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-detalles">Detalles interiores</h2>
+    <div class="sec-renders__grid">
+
+      <figure class="sec-box reveal">
+        <img src="img/escalera.jpg" alt="Vestíbulo principal"
+             width="600" height="600" loading="lazy"
+             data-lightbox data-lb-src="img/escalera.jpg" data-lb-caption="Remate acceso" data-lb-group="detalles">
+        <figcaption>Remate acceso</figcaption>
+      </figure>
+
+      <figure class="sec-box reveal">
+        <img src="img/cocinacerrada.jpg" alt="Cocina y área social"
+             width="600" height="600" loading="lazy"
+             data-lightbox data-lb-src="img/cocinacerrada.jpg" data-lb-caption="Cocina Cerrada" data-lb-group="detalles">
+        <figcaption>OPC. Cocina Cerrada</figcaption>
+      </figure>
+
+      <figure class="sec-box reveal">
+        <img src="img/familypano.jpg" alt="Family Panorámica"
+             width="600" height="600" loading="lazy"
+             data-lightbox data-lb-src="img/familypano.jpg" data-lb-caption="OPC. Family" data-lb-group="detalles">
+        <figcaption>OPC. Family</figcaption>
+      </figure>
+
+      <figure class="sec-box reveal">
+        <img src="img/jardinera.jpg" alt="Jardinera interior"
+             width="600" height="600" loading="lazy"
+             data-lightbox data-lb-src="img/jardinera.jpg" data-lb-caption="Vestíbulo Planta Alta" data-lb-group="detalles">
+        <figcaption>Vest Planta Alta</figcaption>
+      </figure>
+
+      <figure class="sec-box reveal">
+        <img src="img/principal.jpg" alt="Recámara principal"
+             width="600" height="600" loading="lazy"
+             data-lightbox data-lb-src="img/principal.jpg" data-lb-caption="Recámara principal" data-lb-group="detalles">
+        <figcaption>Recámara Principal</figcaption>
+      </figure>
+
+      <figure class="sec-box reveal">
+        <img src="img/tv.jpg" alt="Sala de TV planta alta"
+             width="600" height="600" loading="lazy"
+             data-lightbox data-lb-src="img/tv.jpg" data-lb-caption="Sala TV" data-lb-group="detalles">
+        <figcaption>Sala TV</figcaption>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ═══════════════════════════════════════════
+     AVANCE DE OBRA
+     CÓMO AGREGAR FOTOS (3 slots disponibles):
+     En cada slot INSERT IMAGE:
+     ① Copia tu foto a img/ (nombres: avance-01.jpg, avance-02.jpg, avance-03.jpg)
+     ② Elimina el div.img-ph de ese slot
+     ③ Descomenta el bloque <div class="obra__gallery-item"...> de ese slot
+     ④ Actualiza src, data-lb-src, alt, data-lb-caption y la fecha del badge
+     PORCENTAJE: cambia los 3 valores marcados con EDITAR-PCT
+═══════════════════════════════════════════ -->
+<section class="obra-section" aria-labelledby="h-obra">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-obra">Avance de obra</h2>
+    <p class="obra__intro reveal">
+      Actualizamos esta sección mensualmente con fotografías reales del proceso constructivo
+      para que puedas seguir el avance de tu inversión con total transparencia.
+    </p>
+
+    <div class="obra-card reveal">
+      <div class="obra__gallery">
+
+        <div class="obra__gallery-item"
+             data-lightbox data-lb-src="img/obraCelosia.jpg"
+             data-lb-caption="Avance de obra — Mayo 2026" data-lb-group="obra">
+          <img src="img/obraCelosia.jpg" alt="Avance de obra — Mayo 2026"
+               width="800" height="450" loading="lazy">
+          <span class="obra-card__badge">Mayo 2026</span>
+        </div>
+
+        <div class="obra__gallery-item"
+             data-lightbox data-lb-src="img/obraMuros.jpg"
+             data-lb-caption="Muros — Mayo 2026" data-lb-group="obra">
+          <img src="img/obraMuros.jpg" alt="Muros — Mayo 2026"
+               width="400" height="300" loading="lazy">
+        </div>
+
+        <div class="obra__gallery-item"
+             data-lightbox data-lb-src="img/obraCimbra.jpg"
+             data-lb-caption="Cimbra — Mayo 2026" data-lb-group="obra">
+          <img src="img/obraCimbra.jpg" alt="Cimbra — Mayo 2026"
+               width="400" height="300" loading="lazy">
+        </div>
+
+      </div><!-- /.obra__gallery -->
+
+      <div class="obra-card__body">
+        <p class="obra-card__label">Última actualización · mayo 2026</p><!-- EDITAR fecha -->
+        <p class="obra-card__desc">
+          Estructura de planta baja concluída al 100%. Inicio de trabajos de cimbrado para recibir armados de losa de entrepiso y posteriormente el colado. El proyecto avanza conforme al calendario establecido en proyecto. 
+        </p><!-- EDITAR descripción -->
+
+        <div class="obra__progress">
+          <div class="obra__progress-header">
+            <span class="obra__progress-label">Avance general de obra</span>
+            <span class="obra__progress-pct">35%</span><!-- EDITAR-PCT -->
+          </div>
+          <div class="obra__bar-track" role="progressbar"
+               aria-valuenow="35"
+               aria-valuemin="0" aria-valuemax="100" aria-label="Avance de obra: 35%"><!-- EDITAR-PCT en aria-valuenow y aria-label -->
+            <div class="obra__bar-fill" data-target-width="35%"></div><!-- EDITAR-PCT -->
+          </div>
+        </div>
+
+        <div class="obra__trust" role="note">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          <p>
+            <strong>Transparencia total para el comprador en preventa.</strong>
+            Las fotografías son tomadas directamente en obra y publicadas sin edición.
+            Podrás pedir la actualización semanal del avance si se requiere.
+          </p><!-- EDITAR texto si lo deseas -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     PRECIO
+     El precio se comparte de forma directa con el interesado.
+     Solo se muestra la oportunidad de preventa y la fecha de entrega.
+     EDITAR: beneficios de la lista si cambian
+═══════════════════════════════════════════ -->
+<section class="price-section" aria-labelledby="h-precio">
+  <div class="wrap">
+    <h2 class="section-tag reveal" id="h-precio">Precio de preventa</h2>
+
+    <div class="reveal">
+      <p class="price__label">Precio oportunidad</p>
+      <p class="price__tagline">Contáctanos para conocer<br>el precio de lanzamiento o <em>agendar una visita de obra</em> </p>
+      <p class="price__delivery">Entrega estimada · Diciembre 2026</p>
+    </div>
+
+    <hr class="divider">
+
+    <ul class="price__includes reveal" aria-label="Beneficios incluidos en preventa">
+      <li>Personalización de planta antes de terminaciones</li><!-- EDITAR beneficios -->
+      <li>Elección de acabados desde catálogo de materiales</li>
+      <li>Escrituración al momento de liquidar</li>
+      <li>Garantía de estructura 10 años</li>
+      <li>Entrega Diciembre 2026</li>
+      <li>Financiamiento personalizado — contáctanos para más información</li>
+    </ul>
+
+    <div class="price__cta reveal">
+      <a href="https://wa.me/524422361139?text=Hola%2C%20me%20interesa%20la%20preventa%20de%20Casa%20Niebla%2020.%20%C2%BFMe%20pueden%20dar%20informaci%C3%B3n%20del%20precio%3F"
+         class="btn btn--primary" target="_blank" rel="noopener noreferrer"
+         aria-label="Solicitar precio de preventa por WhatsApp (abre en nueva pestaña)"><!-- EDITAR número en href -->
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        Solicitar información y precio
+      </a>
+    </div>
+
+    <p class="price__scarcity reveal" role="note">
+      Precio de lanzamiento vigente hasta agotar la etapa de preventa — unidad única
+    </p>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════
+     CONTACTO
+     EDITAR: nombre, teléfono, correo, colonia
+     IMPORTANTE: el teléfono aparece en 4 lugares —
+     usa Ctrl+H en VS Code para reemplazar todos de una vez
+═══════════════════════════════════════════ -->
+<section class="contact-section" aria-labelledby="h-contacto">
+  <div class="wrap">
+    <hr class="divider" style="background:rgba(255,255,255,.07);margin-bottom:var(--s6)">
+    <img src="img/Taludlogo.png" alt="Talud" class="contact__logo reveal" id="h-contacto">
+    <address class="contact__details reveal">
+      <a href="https://www.talud.mx" target="_blank" rel="noopener">www.talud.mx</a><br>
+      <a href="https://wa.me/524422361139?text=Hola%2C%20me%20interesa%20la%20preventa%20de%20Casa%20Niebla%2020." target="_blank" rel="noopener noreferrer">+52 442 236 1139</a><br>
+      Av. de las Ciencias 3015-3er piso, Santa Fé, 76230 Juriquilla, Qro.
+    </address>
+  </div>
+</section>
+
+<footer class="footer" role="contentinfo">
+  <p>Casa Niebla 20 · Altozano · Querétaro · 2026 · Precios, materiales e información sujetos a cambios sin previo aviso · Imágenes son renders representativos</p>
+</footer>
+
+<!-- Sticky bar móvil — EDITAR número de teléfono -->
+<nav class="sticky-bar" aria-label="Contacto rápido">
+  <a href="https://wa.me/524422361139?text=Hola%2C%20me%20interesa%20la%20preventa%20de%20Casa%20Niebla%2020."
+     class="sticky-btn sticky-btn--wa" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><!-- EDITAR número -->
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+    WhatsApp
+  </a>
+  <a href="tel:+524422361139" class="sticky-btn sticky-btn--call" aria-label="Llamar"><!-- EDITAR número -->
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.07 2.18 2 2 0 012.07 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Llamar
+  </a>
+</nav>
+
+<script src="js/main.js" defer></script>
+
+<!--
+HEADERS DE SEGURIDAD EN EL SERVIDOR (netlify.toml):
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options           = "DENY"
+    X-Content-Type-Options    = "nosniff"
+    Referrer-Policy           = "strict-origin-when-cross-origin"
+    Permissions-Policy        = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    Content-Security-Policy   = "default-src 'self'; font-src 'self' https://fonts.gstatic.com; style-src 'self' https://fonts.googleapis.com; img-src 'self' data: https:; script-src 'self'; frame-ancestors 'none';"
+-->
+
+</body>
+</html>
