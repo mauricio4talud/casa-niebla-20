@@ -170,16 +170,17 @@ overlay.addEventListener('keydown',function(e){
   if(e.key==='Tab'){e.preventDefault();closeBtn.focus();}
 });
 
-/* ── Swipe táctil ── */
-var touchStartX=0;
+/* ── Swipe táctil (solo móvil/tablet) ── */
+var touchStartX=0,touchStartY=0;
 overlay.addEventListener('touchstart',function(e){
   touchStartX=e.changedTouches[0].clientX;
+  touchStartY=e.changedTouches[0].clientY;
 },{passive:true});
 overlay.addEventListener('touchend',function(e){
   var dx=e.changedTouches[0].clientX-touchStartX;
-  if(Math.abs(dx)>50){
-    if(dx<0)nextLb();else prevLb();
-  }
+  var dy=e.changedTouches[0].clientY-touchStartY;
+  if(Math.abs(dy)>Math.abs(dx)&&Math.abs(dy)>80){closeLb();return;}
+  if(Math.abs(dx)>50){if(dx<0)nextLb();else prevLb();}
 },{passive:true});
 
 }());
